@@ -1,0 +1,22 @@
+CREATE DATABASE IF NOT EXISTS banking_system;
+USE banking_system;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS accounts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    balance DECIMAL(10,2) DEFAULT 0.00
+);
+
+CREATE TABLE IF NOT EXISTS transactions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sender VARCHAR(50),
+    receiver VARCHAR(50),
+    amount DECIMAL(10,2),
+    timestamp DATETIME
+);
