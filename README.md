@@ -5,4 +5,4 @@ Student Number: GH1034223
 Project: Banking Portal System
 Description: A basic banking app
 Features: Registration, Login, Password Reset, Account Management
-Video Link: 
+Video Link: https://youtu.be/yXnfBkVD7wg
